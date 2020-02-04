@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 8/01/2020 09:30:34 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="test" name="co.com.PruebaWS.entidades.Factura" optimistic-lock="version" table="factura">
+    <id name="facturaId" type="java.lang.Integer">
+      <column name="factura_id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="razonSocialEmisor" type="string">
+      <column length="150" name="razon_social_emisor"/>
+    </property>
+    <property name="nitEmisor" type="java.lang.Integer">
+      <column name="nit_emisor"/>
+    </property>
+    <property name="razonSocialReceptor" type="string">
+      <column length="150" name="razon_social_receptor"/>
+    </property>
+    <property name="nitReceptor" type="java.lang.Integer">
+      <column name="nit_receptor"/>
+    </property>
+    <property name="fechaEmision" type="date">
+      <column length="10" name="fecha_emision"/>
+    </property>
+    <property name="descripcionItem" type="string">
+      <column length="150" name="descripcion_item"/>
+    </property>
+    <property name="cantidadItem" type="java.lang.Integer">
+      <column name="cantidad_item"/>
+    </property>
+    <property name="valorUnitarioItem" type="big_decimal">
+      <column name="valor_unitario_item" precision="10"/>
+    </property>
+    <property name="valorNetoSinIva" type="big_decimal">
+      <column name="valor_neto_sin_iva" precision="10"/>
+    </property>
+    <property name="valorIva" type="big_decimal">
+      <column name="valor_iva" precision="10"/>
+    </property>
+    <property name="valorTotal" type="big_decimal">
+      <column name="valor_total" precision="10"/>
+    </property>
+    <property name="estado" type="java.lang.Integer">
+      <column name="estado"/>
+    </property>
+  </class>
+</hibernate-mapping>

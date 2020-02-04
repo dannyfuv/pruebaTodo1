@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="WSFactura">
+      <implementation-class>co.com.PruebaWS.ws.WSFactura</implementation-class>
+    </service>
+    <service name="WSProducto">
+      <implementation-class>co.com.PruebaWS.ws.WSProducto</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>
